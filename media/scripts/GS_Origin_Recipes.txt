@@ -1,0 +1,69 @@
+module GodSpace {
+  imports {
+    Base,
+  }
+
+  recipe exchange Axe {
+    keep God_Watch,
+    god_point = 100,
+    Result: Axe,
+    Time: 50,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+  recipe exchange Crowbar {
+    keep God_Watch,
+    god_point = 50,
+    Result: Crowbar,
+    Time: 50,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }  
+  
+  recipe exchange Katana {
+    keep God_Watch,
+    god_point = 500,
+    Result: Katana,
+    Time: 50,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+  recipe exchange Sledgehammer2 {
+    keep God_Watch,
+    god_point = 300,
+    Result: Sledgehammer2,
+    Time: 50,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+  recipe exchange sugar {
+    keep God_Watch,
+    god_point = 10,
+    Result: Sugar,
+    Time: 50,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+  recipe exchange teabag {
+    keep God_Watch,
+    god_point = 10,
+    Result: Teabag,
+    Time: 50,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+  recipe exchange coffee {
+    keep God_Watch,
+    god_point = 10,
+    Result: Coffee2,
+    Time: 50,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+}

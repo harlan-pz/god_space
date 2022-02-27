@@ -1,0 +1,78 @@
+module GodSpace {
+  imports {
+    Base,
+  }
+
+ recipe exchange 223Box {
+    keep God_Watch,
+    god_point = 10,
+    Result: 223Box,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+  recipe exchange 308Box {
+    keep God_Watch,
+    god_point = 10,
+    Result: 308Box,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+    
+  recipe exchange 556Box {
+    keep God_Watch,
+    god_point = 10,
+    Result: 556Box,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+    
+  recipe exchange Bullets38Box {
+    keep God_Watch,
+    god_point = 10,
+    Result: Bullets38Box,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+    
+  recipe exchange Bullets44Box {
+    keep God_Watch,
+    god_point = 10,
+    Result: Bullets44Box,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+    
+  recipe exchange Bullets45Box {
+    keep God_Watch,
+    god_point = 10,
+    Result: Bullets45Box,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+      
+  recipe exchange Bullets9mmBox {
+    keep God_Watch,
+    god_point = 10,
+    Result: Bullets9mmBox,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+  recipe exchange ShotgunShellsBox {
+    keep God_Watch,
+    god_point = 10,
+    Result: ShotgunShellsBox,
+    Time: 10,
+    Category: God_Space,
+    CanBeDoneFromFloor: true,
+  }
+
+}

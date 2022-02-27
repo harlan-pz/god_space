@@ -1,0 +1,6 @@
+IGUI_CN = {
+  IGUI_CraftCategory_God_Space = "主神空间",
+  IGUI_USE_ZOMBOID_MEDICINE = "血清使用了",
+  IGUI_Use_Repair_Tool = "使用万能修理工具",
+  IGUI_Repair_Success = "修理成功",
+}

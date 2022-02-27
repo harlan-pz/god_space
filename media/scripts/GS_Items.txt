@@ -316,7 +316,7 @@ module GodSpace
 	item space_ring_food
   {
     Type = Container,
-    DisplayName = space_ring,
+    DisplayName = space_ring_food,
     ClothingItem = Ring_Right_RingFinger_GoldRuby,
     CanBeEquipped = Ring002,
     BodyLocation = Ring002,

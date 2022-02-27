@@ -172,7 +172,7 @@ module GodSpace
 	item 02_shoes_red
 	{
 		Type = Clothing,
-		DisplayName = 02_Shoes_red,
+		DisplayName = 02_shoes_red,
 		ClothingItem = 02shoes,
 		BodyLocation = Shoes,
 		BloodLocation = Shoes,

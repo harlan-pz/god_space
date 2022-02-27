@@ -30,8 +30,10 @@ Recipe_CN = {
   Recipe_exchange 556Box = "兑换 5.56mm子弹(盒装)",
   Recipe_exchange Bullets38Box = "兑换 .38子弹(盒装)",
   Recipe_exchange Bullets44Box = "兑换 .44子弹(盒装)",
+  Recipe_exchange Bullets45Box = "兑换 .45子弹(盒装)",
   Recipe_exchange Bullets9mmBox = "兑换 9mm子弹(盒装)",
   Recipe_exchange ShotgunShellsBox = "兑换 霰弹枪子弹(盒装)",
-  Recipe_exchange GS-PGM-Hecate-II = "兑换 黑卡蒂II狙击枪",
-
+  Recipe_exchange sugar = "兑换 食用糖",
+  Recipe_exchange teabag = "兑换 茶包",
+  Recipe_exchange coffee = "兑换 咖啡",
 }

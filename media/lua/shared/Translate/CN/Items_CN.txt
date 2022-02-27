@@ -20,5 +20,5 @@ Items_CN = {
   DisplayName_space_ring_medicine = "空间戒指(药物)",
   DisplayName_space_ring_food = "空间戒指(食物)",
   DisplayName_space_ring_arm = "空间戒指(武器)",
-  DisplayName_GS_PGM-Hecate-II = "黑卡蒂II狙击枪",
+  DisplayName_GS_PGM_Hecate_II = "黑卡蒂II狙击枪",
 }

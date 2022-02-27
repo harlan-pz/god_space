@@ -343,11 +343,11 @@ module GodSpace
     RunSpeedModifier = 1.10,
   }
 
-	item GS_PGM-Hecate-II
+	item GS_PGM_Hecate_II
   {
     Type = Weapon,
     WeaponSprite	= Hecate2,
-    DisplayName	= GS_PGM-Hecate-II,
+    DisplayName	= GS_PGM_Hecate_II,
     Icon = Hecate2,
     TwoHandWeapon = TRUE,
     RequiresEquippedBothHands = TRUE,
@@ -421,6 +421,4 @@ module GodSpace
     BringToBearSound = MSR788BringToBear,
     Weight =	4,
   }
-
-
 }

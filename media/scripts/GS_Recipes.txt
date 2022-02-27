@@ -275,7 +275,7 @@ module GodSpace
   {
     keep God_Watch,
     god_point = 500,
-    Result: GS_PGM-Hecate-II,
+    Result: GS_PGM_Hecate_II,
     Time: 50,
     Category: God_Space,
     CanBeDoneFromFloor: true,

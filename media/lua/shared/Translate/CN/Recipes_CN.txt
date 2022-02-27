@@ -32,5 +32,6 @@ Recipe_CN = {
   Recipe_exchange Bullets44Box = "兑换 .44子弹(盒装)",
   Recipe_exchange Bullets9mmBox = "兑换 9mm子弹(盒装)",
   Recipe_exchange ShotgunShellsBox = "兑换 霰弹枪子弹(盒装)",
+  Recipe_exchange GS-PGM-Hecate-II = "兑换 黑卡蒂II狙击枪",
 
 }

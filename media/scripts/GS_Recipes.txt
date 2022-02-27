@@ -241,36 +241,6 @@ module GodSpace
     Category: God_Space,
   }
 
-  recipe exchange space ring medicine
-  {
-    keep God_Watch,
-    god_point = 40,
-    Result: space_ring_medicine,
-    Time: 50,
-    Category: God_Space,
-    CanBeDoneFromFloor: true,
-	}
-
-  recipe exchange space ring food
-  {
-    keep God_Watch,
-    god_point = 60,
-    Result: space_ring_food,
-    Time: 50,
-    Category: God_Space,
-    CanBeDoneFromFloor: true,
-	}
-
-  recipe exchange space ring arm
-  {
-    keep God_Watch,
-    god_point = 100,
-    Result: space_ring_arm,
-    Time: 50,
-    Category: God_Space,
-    CanBeDoneFromFloor: true,
-	}
-
   recipe exchange GS-PGM-Hecate-II
   {
     keep God_Watch,

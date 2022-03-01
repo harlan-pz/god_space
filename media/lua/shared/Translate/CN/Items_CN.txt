@@ -21,4 +21,9 @@ Items_CN = {
   DisplayName_space_ring_food = "空间戒指(食物)",
   DisplayName_space_ring_arm = "空间戒指(武器)",
   DisplayName_GS_PGM_Hecate_II = "黑卡蒂II狙击枪",
+  DisplayName_side_quests_d = "D级支线剧情",
+  DisplayName_side_quests_c = "C级支线剧情",
+  DisplayName_side_quests_b = "B级支线剧情",
+  DisplayName_side_quests_a = "A级支线剧情",
+  DisplayName_side_quests_s = "S级支线剧情",
 }

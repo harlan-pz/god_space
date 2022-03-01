@@ -8,7 +8,7 @@ module GodSpace {
     god_point = 10,
     Result: 223Box,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
 
@@ -17,7 +17,7 @@ module GodSpace {
     god_point = 10,
     Result: 308Box,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
     
@@ -26,7 +26,7 @@ module GodSpace {
     god_point = 10,
     Result: 556Box,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
     
@@ -35,7 +35,7 @@ module GodSpace {
     god_point = 10,
     Result: Bullets38Box,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
     
@@ -44,7 +44,7 @@ module GodSpace {
     god_point = 10,
     Result: Bullets44Box,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
     
@@ -53,7 +53,7 @@ module GodSpace {
     god_point = 10,
     Result: Bullets45Box,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
       
@@ -62,7 +62,7 @@ module GodSpace {
     god_point = 10,
     Result: Bullets9mmBox,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
 
@@ -71,7 +71,7 @@ module GodSpace {
     god_point = 10,
     Result: ShotgunShellsBox,
     Time: 10,
-    Category: God_Space,
+    Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
 

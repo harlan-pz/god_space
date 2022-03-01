@@ -1,0 +1,465 @@
+module GodSpace
+{
+	imports {
+		Base,
+	}
+	
+  item God_Watch
+	{
+	  DisplayCategory = Accessory,
+		Type = AlarmClockClothing,
+		DisplayName = God_Watch,
+		ClothingItem = WristWatch_Right_DigitalRed,
+		BodyLocation = RightWrist,
+		Icon = DigitalWatch_Red,
+		Weight = 0.1,
+		Cosmetic = TRUE,
+		AlarmSound = WatchAlarmLoop,
+		SoundRadius = 7,
+		MetalValue = 3,
+		Tags = Digital,
+		WorldStaticModel = DigitalWatchRed,
+	}
+
+	item 02_clothes_white
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_white,
+		ClothingItem = 02clothes2,
+		BodyLocation = TankTop,
+		Icon = 02clothes2,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense = 40,
+		BiteDefense = 40,
+		Insulation = 0.6,
+		WindResistance = 0.8,
+		FabricType = Cotton,
+		RunSpeedModifier = 1.05,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+
+	item 02_clothes_white_super
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_white_super,
+		ClothingItem = 02clothes2,
+		BodyLocation = TankTop,
+		Icon = 02clothes2,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense = 70,
+		BiteDefense = 70,
+		Insulation = 0.3,
+		WindResistance = 0.4,
+		FabricType = Cotton,
+		RunSpeedModifier = 1.05,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+
+	item 02_clothes_white_finall
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_white_finall,
+		ClothingItem = 02clothes2,
+		BodyLocation = TankTop,
+		Icon = 02clothes2,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense = 100,
+		BiteDefense = 100,
+		Insulation = 0.6,
+		WindResistance = 0.8,
+		WaterResistance = 0.9,
+		FabricType = Cotton,
+		RunSpeedModifier = 1.20,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+
+	item 02_clothes_white_finall_warm
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_white_finall_warm,
+		ClothingItem = 02clothes2,
+		BodyLocation = TankTop,
+		Icon = 02clothes2,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense = 100,
+		BiteDefense = 100,
+		Insulation = 1.0,
+		WindResistance = 1.0,
+		WaterResistance = 0.9,
+		FabricType = Cotton,
+		RunSpeedModifier = 1.50,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+
+	item 02_clothes_red
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_red,
+		ClothingItem = 02clothes,
+		BodyLocation = TankTop,
+		Icon = 02clothes,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense 	= 40,
+		BiteDefense = 40,
+		Insulation = 0.3,
+		WindResistance= 0.4,
+		CombatSpeedModifier = 1.05,
+		FabricType = Cotton,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+	item 02_clothes_red_super
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_red_super,
+		ClothingItem = 02clothes,
+		BodyLocation = TankTop,
+		Icon = 02clothes,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense 	= 70,
+		BiteDefense = 70,
+		Insulation = 0.6,
+		WindResistance= 0.8,
+		CombatSpeedModifier = 1.20,
+		FabricType = Cotton,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+	item 02_clothes_red_finall
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_red_finall,
+		ClothingItem = 02clothes,
+		BodyLocation = TankTop,
+		Icon = 02clothes,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense 	= 100,
+		BiteDefense = 100,
+		Insulation = 0.6,
+		WindResistance = 0.8,
+		WaterResistance = 0.9,
+		CombatSpeedModifier = 1.50,
+		FabricType = Cotton,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+	item 02_clothes_red_finall_warm
+	{
+		Type = Clothing,
+		DisplayName = 02_clothes_red_finall_warm,
+		ClothingItem = 02clothes,
+		BodyLocation = TankTop,
+		Icon = 02clothes,
+		BloodLocation = Trousers;Jumper,
+		ScratchDefense 	= 100,
+		BiteDefense = 100,
+		Insulation =1.0,
+		WindResistance = 1.0,
+		WaterResistance = 0.9,
+		CombatSpeedModifier = 1.50,
+		FabricType = Cotton,
+		Weight = 1,
+    WorldStaticModel = BoilerSuit_Ground,
+	}
+
+	item 02_shoes_red
+	{
+		Type = Clothing,
+		DisplayName = 02_shoes_red,
+		ClothingItem = 02shoes,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = 02shoes,
+		StompPower = 2.5,
+		RunSpeedModifier = 1.2,
+		RemoveOnBroken = false,
+		FabricType = Cotton,
+		ScratchDefense = 100,
+		BiteDefense = 100,
+		Insulation = 0.6,
+		WindResistance = 1.0,
+		WaterResistance = 1.0,
+		Weight = 1,
+    WorldStaticModel = 02shoes_ground,
+	}
+
+	item 02_shoes_white
+	{
+		Type = Clothing,
+		DisplayName = 02_shoes_white,
+		ClothingItem = 02shoes2,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = 02shoes2,
+		StompPower = 2.5,
+		RunSpeedModifier = 1.2,
+		RemoveOnBroken = false,
+		FabricType = Cotton,
+		ScratchDefense = 100,
+		BiteDefense = 100,
+		Insulation = 0.5,
+		WindResistance = 1.0,
+		WaterResistance = 1.0,
+		Weight = 1,
+    WorldStaticModel = 02shoes_ground2,
+	}
+
+	item 02_mask
+  {
+   	Type = Clothing,
+   	DisplayName = 02_mask,
+   	ClothingItem = 02mask,
+   	BodyLocation = kigurumi,
+   	Icon = 02mask,
+		CanHaveHoles = false,
+		BloodLocation = Head;Neck,
+		NeckProtectionModifier = 0.8,
+		ChanceToFall = 0,
+		BiteDefense = 30,
+		ScratchDefense = 35,
+		Insulation = 0.4,
+		WindResistance = 0.8,
+		WaterResistance = 0.4,
+		Weight = 1,
+    WorldStaticModel = 02mask_Ground,
+  }
+
+	item space_ring
+  {
+    Type = Container,
+    DisplayName = space_ring,
+    ClothingItem = Ring_Right_RingFinger_GoldRuby,
+    CanBeEquipped = Ring001,
+    BodyLocation = Ring001,
+    Icon = Ring_GoldRuby,
+    Capacity = 50,
+    WeightReduction = 100,
+    Weight = 0.1,
+    PutInSound = PutItemInBag,
+    RunSpeedModifier = 1.10,
+  }
+
+	item space_ring_super
+  {
+    Type = Container,
+    DisplayName = space_ring_super,
+    ClothingItem = Ring_Right_RingFinger_GoldRuby,
+    CanBeEquipped = Ring001,
+    BodyLocation = Ring001,
+    Icon = Ring_GoldRuby,
+    Capacity = 100,
+    WeightReduction = 100,
+    Weight = 0.1,
+    PutInSound = PutItemInBag,
+    RunSpeedModifier = 1.10,
+  }
+
+	item space_ring_finall
+  {
+    Type = Container,
+    DisplayName = space_ring_finall,
+    ClothingItem = Ring_Right_RingFinger_GoldRuby,
+    CanBeEquipped = Ring001,
+    BodyLocation = Ring001,
+    Icon = Ring_GoldRuby,
+    Capacity = 200,
+    WeightReduction = 100,
+    Weight = 0.1,
+    PutInSound = PutItemInBag,
+    RunSpeedModifier = 1.10,
+  }
+
+	item god_point {
+		Weight = 0,
+		Type = Normal,
+		DisplayName= god_point,
+		Icon	=	god_point,
+    WorldStaticModel = god_point,
+	}
+
+	item side_quests_d {
+		Weight = 0,
+		Type = Normal,
+		DisplayName= side_quests_d,
+		Icon	=	CreditCard,
+    WorldStaticModel = CreditCard,
+	}
+
+	item side_quests_c {
+		Weight = 0,
+		Type = Normal,
+		DisplayName= side_quests_c,
+		Icon	=	CreditCard,
+    WorldStaticModel = CreditCard,
+	}
+
+	item side_quests_b {
+		Weight = 0,
+		Type = Normal,
+		DisplayName= side_quests_b,
+		Icon	=	CreditCard,
+    WorldStaticModel = CreditCard,
+	}
+
+	item side_quests_a {
+		Weight = 0,
+		Type = Normal,
+		DisplayName= side_quests_a,
+		Icon	=	CreditCard,
+    WorldStaticModel = CreditCard,
+	}
+
+	item side_quests_s {
+		Weight = 0,
+		Type = Normal,
+		DisplayName= side_quests_s,
+		Icon	=	CreditCard,
+    WorldStaticModel = CreditCard,
+	}
+
+	item zomboid_medicine {
+		Weight = 1,
+		Type = Normal,
+		DisplayName= zomboid_medicine,
+		Icon	=	Perfume1,
+    WorldStaticModel = Perfume,
+	}
+
+	item repair_tool
+	{
+		Weight = 0.5,
+		Type = Normal,
+		DisplayName = repair_tool,
+		Icon = Wrench,
+	}
+
+	item space_ring_medicine
+  {
+    Type = Container,
+    DisplayName = space_ring_medicine,
+    ClothingItem = Ring_Right_RingFinger_GoldRuby,
+    CanBeEquipped = Ring003,
+    BodyLocation = Ring003,
+    Icon = Ring_GoldRuby,
+    Capacity = 20,
+    WeightReduction = 100,
+    Weight = 0.1,
+    PutInSound = PutItemInBag,
+    RunSpeedModifier = 1.10,
+  }
+
+	item space_ring_food
+  {
+    Type = Container,
+    DisplayName = space_ring_food,
+    ClothingItem = Ring_Right_RingFinger_GoldRuby,
+    CanBeEquipped = Ring002,
+    BodyLocation = Ring002,
+    Icon = Ring_GoldRuby,
+    Capacity = 30,
+    WeightReduction = 100,
+    Weight = 0.1,
+    PutInSound = PutItemInBag,
+    RunSpeedModifier = 1.10,
+  }
+
+	item space_ring_arm
+  {
+    Type = Container,
+    DisplayName = space_ring_arm,
+    ClothingItem = Ring_Right_RingFinger_GoldRuby,
+    CanBeEquipped = Ring004,
+    BodyLocation = Ring004,
+    Icon = Ring_GoldRuby,
+    Capacity = 50,
+    WeightReduction = 100,
+    Weight = 0.1,
+    PutInSound = PutItemInBag,
+    RunSpeedModifier = 1.10,
+  }
+
+	item GS_PGM_Hecate_II
+  {
+    Type = Weapon,
+    WeaponSprite	= Hecate2,
+    DisplayName	= GS_PGM_Hecate_II,
+    Icon = Hecate2,
+    TwoHandWeapon = TRUE,
+    RequiresEquippedBothHands = TRUE,
+    MaxAmmo = 7,
+    AmmoBox = 308Box,
+    AmmoType = Base.308Bullets,
+    HitChance = 45,
+    MinRange	=	0.61,
+    MaxRange	=	30,
+    ConditionLowerChanceOneIn	=	65,
+    CriticalChance = 40,
+    RecoilDelay = 50,
+    ReloadTime = 10,
+    CritDmgMultiplier = 10,
+    AimingPerkCritModifier = 15,
+    AimingPerkHitChanceModifier = 15,
+    AimingPerkMinAngleModifier = 0.01,
+    AimingPerkRangeModifier = 3,
+    PiercingBullets = TRUE,
+    SoundGain = 2,
+    AimingTime = 20,
+    MetalValue = 45,
+    SoundRadius	=	2,
+    MinDamage	=	1.5,
+    MaxDamage	=	2.3,
+    SplatSize	=	3,
+    KnockdownMod	=	2,
+    MinAngle	=	0.95,
+    MinimumSwingTime	=	0.4,
+    ToHitModifier	=	1.5,
+    NPCSoundBoost	=	1.5,
+    SplatNumber	=	3,
+    PushBackMod	=	0.3,
+    SwingTime	=	0.4,
+    JamGunChance = 0,
+    SwingAmountBeforeImpact	=	0,
+    ProjectileCount	=	1,
+    DoorDamage	=	20,
+    KnockBackOnNoDeath	=	TRUE,
+    Ranged=	TRUE,
+    SubCategory	=	Firearm,
+    ConditionMax =	100,
+    ShareDamage	=	FALSE,
+    MaxHitCount	=	1,
+    IsAimedFirearm	=	TRUE,
+    UseEndurance	=	FALSE,
+    SwingAnim	=	Rifle,
+    MultipleHitConditionAffected=	FALSE,
+    SplatBloodOnNoDeath	=	TRUE,
+    RunAnim	=	Run_Weapon2,
+    IdleAnim	=	Idle_Weapon2,
+    WeaponReloadType = boltactionnomag,
+    RackAfterShoot = FALSE,
+    AttachmentType = Rifle,
+    SoundVolume = 200,
+    ImpactSound	=	null,
+    SwingSound = HecateShoot,
+    HitSound = BulletHitBody,
+    ClickSound = MSR788Jam,
+    EquipSound = MSR788Equip,
+    UnequipSound = MSR788UnEquip,
+    InsertAmmoSound = MSR788InsertAmmo,
+    EjectAmmoSound = MSR788EjectAmmo,
+    InsertAmmoStartSound = MSR788InsertAmmoStart,
+    InsertAmmoStopSound = MSR788InsertAmmoStop,
+    EjectAmmoStartSound = MSR788EjectAmmoStart,
+    EjectAmmoStopSound = MSR788EjectAmmoStop,
+    ShellFallSound = MSR788CartridgeFall,
+    RackSound = MSR788Rack,
+    BreakSound = MSR788Break,
+    BringToBearSound = MSR788BringToBear,
+    Weight =	4,
+  }
+
+	 
+}

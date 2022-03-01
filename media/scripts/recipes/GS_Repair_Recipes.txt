@@ -1,0 +1,26 @@
+module GodSpace {
+  imports {
+    Base,
+  }
+
+  recipe exchange god repair light {
+    keep God_Watch,
+    god_point = 300,
+    side_quests_b,
+    Result: God_Watch,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Repaire,
+    OnCreate: Recipe.OnCreate.exchangeGodRepairLight,
+  }
+
+  recipe use repair tool {
+    keep God_Watch,
+    repair_tool,
+    Result: repair_tool,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Repaire,
+    OnCreate: Recipe.OnCreate.useRepairTool,
+  }
+}

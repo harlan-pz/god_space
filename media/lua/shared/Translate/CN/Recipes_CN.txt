@@ -37,4 +37,9 @@ Recipe_CN = {
   Recipe_exchange sugar = "兑换 食用糖",
   Recipe_exchange teabag = "兑换 茶包",
   Recipe_exchange coffee = "兑换 咖啡",
+  Recipe_exchange primary warrior = "强化 武道家(初级) 血统",
+  Recipe_exchange middle warrior = "强化 武道家(中级) 血统",
+  Recipe_exchange senior warrior = "强化 武道家(高级) 血统",
+
+
 }

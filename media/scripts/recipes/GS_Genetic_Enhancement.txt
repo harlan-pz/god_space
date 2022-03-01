@@ -1,0 +1,17 @@
+module GodSpace {
+  imports {
+    Base,
+  }
+
+  Recipes exchange primary warrior {
+    
+  }
+
+  Recipes exchange middle warrior {
+    
+  }
+
+  Recipes exchange senior warrior {
+    
+  }
+}

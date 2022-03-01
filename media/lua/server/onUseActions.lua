@@ -1,6 +1,6 @@
 function Recipe.OnCreate.exchangeGodRepairLight(items, result, player)
     player:getBodyDamage():RestoreToFullHealth()
-    player:Say(getText("IGUI_USE_ZOMBOID_MEDICINE"))
+    player:Say(getText("IGUI_God_Repaire_Light_Work"))
 end
 
 function Recipe.OnCreate.useRepairTool(items, result, player)

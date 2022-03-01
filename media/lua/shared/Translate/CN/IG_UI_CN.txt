@@ -3,7 +3,7 @@ IGUI_CN = {
   IGUI_CraftCategory_God_Space_Item = "主神空间-物品",
   IGUI_CraftCategory_God_Space_Repaire = "主神空间-修复",
   IGUI_CraftCategory_God_Space_Equipment = "主神空间-装备",
-  IGUI_USE_ZOMBOID_MEDICINE = "血清使用了",
+  IGUI_God_Repaire_Light_Work = "主神帮我修复了所有伤势",
   IGUI_Use_Repair_Tool = "使用万能修理工具",
   IGUI_Repair_Success = "修理成功",
 }

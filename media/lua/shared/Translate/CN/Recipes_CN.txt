@@ -40,6 +40,5 @@ Recipe_CN = {
   Recipe_exchange primary warrior = "强化 武道家(初级) 血统",
   Recipe_exchange middle warrior = "强化 武道家(中级) 血统",
   Recipe_exchange senior warrior = "强化 武道家(高级) 血统",
-
-
+  Recipe_use repair tool = "使用 万能修复工具",
 }

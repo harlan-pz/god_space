@@ -7,7 +7,7 @@ module GodSpace {
     keep God_Watch,
     god_point = 300,
     side_quests_b,
-    Result: God_Watch,
+    Result: god_point,
     RemoveResultItem : true,
     Time: 100,
     Category: God_Space_Repaire,

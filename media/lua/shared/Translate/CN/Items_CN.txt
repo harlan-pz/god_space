@@ -26,4 +26,5 @@ Items_CN = {
   DisplayName_side_quests_b = "B级支线剧情",
   DisplayName_side_quests_a = "A级支线剧情",
   DisplayName_side_quests_s = "S级支线剧情",
+  DisplayName_side_quests_exchange = "支线剧情交换券",
 }

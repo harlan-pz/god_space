@@ -4,157 +4,6 @@ module GodSpace
     Base,
   }
 
-  recipe exchange God Watch {
-    god_point = 5,
-    Result: God_Watch,
-    Time: 50,
-    Category: God_Space_Equipment,
-  }
-
-  recipe exchange Axe {
-    keep God_Watch,
-    god_point = 150,
-    Result: Axe,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange Katana {
-    keep God_Watch,
-    god_point = 300,
-    Result: Katana,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes white {
-    keep God_Watch,
-    god_point = 100,
-    Result: 02_clothes_white,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes white super {
-    keep God_Watch,
-    02_clothes_white,
-    god_point = 200,
-    Result: 02_clothes_white_super,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes white finall {
-    keep God_Watch,
-    02_clothes_white_super,
-    god_point = 500,
-    Result: 02_clothes_white_finall,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes white finall warm {
-    keep God_Watch,
-    god_point = 10,
-    02_clothes_white_finall,
-    Result: 02_clothes_white_finall_warm,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes white finall {
-    keep God_Watch,
-    god_point = 10,
-    02_clothes_white_finall_warm,
-    Result: 02_clothes_white_finall,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes red {
-    keep God_Watch,
-    god_point = 100,
-    Result: 02_clothes_red,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes red super {
-    keep God_Watch,
-    02_clothes_red,
-    god_point = 200,
-    Result: 02_clothes_red_super,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes red finall {
-    keep God_Watch,
-    02_clothes_red_super,
-    god_point = 500,
-    Result: 02_clothes_red_finall,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 clothes red finall {
-    keep God_Watch,
-    god_point = 10,
-    02_clothes_red_finall_warm,
-    Result: 02_clothes_red_finall,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-
-  recipe exchange 02 clothes red finall warm {
-    keep God_Watch,
-    god_point = 10,
-    02_clothes_red_finall,
-    Result: 02_clothes_red_finall_warm,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 shoes red {
-    keep God_Watch,
-    god_point = 100,
-    Result: 02_shoes_red,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-  
-  recipe exchange 02 shoes white {
-    keep God_Watch,
-    god_point = 100,
-    Result: 02_shoes_white,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
-  recipe exchange 02 mask {
-    keep God_Watch,
-    god_point = 100,
-    Result: 02_mask,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-  }
-
   recipe exchange space ring
   {
     keep God_Watch,
@@ -165,7 +14,7 @@ module GodSpace
     CanBeDoneFromFloor: true,
 	}
 
-  recipe exchange space ring super
+   recipe exchange space ring super
   {
     keep God_Watch,
     space_ring,
@@ -182,16 +31,6 @@ module GodSpace
     space_ring_super,
     god_point = 500,
     Result: space_ring_finall,
-    Time: 50,
-    Category: God_Space_Equipment,
-    CanBeDoneFromFloor: true,
-	}
-
-  recipe exchange GS-PGM-Hecate-II
-  {
-    keep God_Watch,
-    god_point = 500,
-    Result: GS_PGM_Hecate_II,
     Time: 50,
     Category: God_Space_Equipment,
     CanBeDoneFromFloor: true,

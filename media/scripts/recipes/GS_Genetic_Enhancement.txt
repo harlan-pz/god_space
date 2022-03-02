@@ -3,15 +3,36 @@ module GodSpace {
     Base,
   }
 
-  Recipes exchange primary warrior {
-    
+  recipe exchange primary warrior {
+    keep God_Watch,
+    god_point = 500,
+    side_quests_b,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Enhancement,
+    OnCreate: Recipe.OnCreate.exchangePrimaryWarrior,
   }
 
-  Recipes exchange middle warrior {
-    
+  recipe exchange middle warrior {
+    keep God_Watch,
+    god_point = 1000,
+    side_quests_a,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Enhancement,
+    OnCreate: Recipe.OnCreate.exchangeMiddleWarrior,
   }
 
-  Recipes exchange senior warrior {
-    
+  recipe exchange senior warrior {
+    keep God_Watch,
+    god_point = 2000,
+    side_quests_s,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Enhancement,
+    OnCreate: Recipe.OnCreate.exchangeSeniorWarrior,
   }
 }

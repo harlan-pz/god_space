@@ -23,4 +23,26 @@ module GodSpace {
     Category: God_Space_Repaire,
     OnCreate: Recipe.OnCreate.useRepairTool,
   }
+
+  recipe repair shield value 20 {
+    keep God_Watch,
+    god_point = 100,
+    side_quests_d,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Repaire,
+    OnCreate: Recipe.OnCreate.repairShield20,
+  }
+
+  recipe repair shield value 50 {
+    keep God_Watch,
+    god_point = 250,
+    side_quests_d,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Repaire,
+    OnCreate: Recipe.OnCreate.repairShield50,
+  }
 }

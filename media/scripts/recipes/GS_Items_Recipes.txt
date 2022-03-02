@@ -3,9 +3,10 @@ module GodSpace {
     Base,
   }
 
-  recipe exchange Axe {
+   exchange Axe {
     keep God_Watch,
-    god_point = 100,
+    side_quests_c,
+    god_point = 200,
     Result: Axe,
     Time: 50,
     Category: God_Space_Item,
@@ -14,7 +15,8 @@ module GodSpace {
 
   recipe exchange Crowbar {
     keep God_Watch,
-    god_point = 50,
+    side_quests_c,
+    god_point = 100,
     Result: Crowbar,
     Time: 50,
     Category: God_Space_Item,
@@ -23,6 +25,7 @@ module GodSpace {
   
   recipe exchange Katana {
     keep God_Watch,
+    side_quests_b,
     god_point = 500,
     Result: Katana,
     Time: 50,
@@ -32,7 +35,8 @@ module GodSpace {
 
   recipe exchange Sledgehammer2 {
     keep God_Watch,
-    god_point = 300,
+    god_point = 500,
+    side_quests_b,
     Result: Sledgehammer2,
     Time: 50,
     Category: God_Space_Item,
@@ -41,7 +45,7 @@ module GodSpace {
 
   recipe exchange sugar {
     keep God_Watch,
-    god_point = 10,
+    god_point = 50,
     Result: Sugar,
     Time: 50,
     Category: God_Space_Item,
@@ -50,7 +54,7 @@ module GodSpace {
 
   recipe exchange teabag {
     keep God_Watch,
-    god_point = 10,
+    god_point = 50,
     Result: Teabag,
     Time: 50,
     Category: God_Space_Item,
@@ -59,46 +63,71 @@ module GodSpace {
 
   recipe exchange coffee {
     keep God_Watch,
-    god_point = 10,
+    god_point = 50,
     Result: Coffee2,
     Time: 50,
     Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
 
-  recipe exchange god point {
-    keep God_Watch,
-    CreditCard,
-    Result: god_point = 50,
-    Time: 1,
-    Category: God_Space_Item,
-    CanBeDoneFromFloor: true,
-  }
-
   recipe exchange repair tool {
     keep God_Watch,
-    god_point = 500,
+    side_quests_c,
+    god_point = 300,
     Result: repair_tool,
     Time: 50,
     Category: God_Space_Item,
   }
 
-  recipe exchange god point {
+  recipe exchange c {
     keep God_Watch,
-    Money,
-    Result: god_point,
-    Time: 1,
+    side_quests_d = 3,
+    side_quests_exchange,
+    Result: side_quests_c,
+    Time: 50,
     Category: God_Space_Item,
-    CanBeDoneFromFloor: true,
   }
 
-  recipe exchange god point {
+  recipe exchange b {
     keep God_Watch,
-    Wallet/Wallet2/Wallet3/Wallet4,
-    Result: god_point = 10,
+    side_quests_c = 3,
+    side_quests_exchange,
+    Result: side_quests_b,
+    Time: 50,
+    Category: God_Space_Item,
+  }
+
+  recipe exchange a {
+    keep God_Watch,
+    side_quests_b = 3,
+    side_quests_exchange,
+    Result: side_quests_a,
+    Time: 50,
+    Category: God_Space_Item,
+  }
+  recipe exchange s {
+    keep God_Watch,
+    side_quests_a = 3,
+    side_quests_exchange,
+    Result: side_quests_s,
+    Time: 50,
+    Category: God_Space_Item,
+  }
+
+  recipe exchange side quests exchange {
+    keep God_Watch,
+    god_point = 1000,
+    Result: side_quests_exchange,
+    Time: 50,
+    Category: God_Space_Item,
+  }
+
+  recipe exchange money {
+    keep God_Watch,
+    god_point,
+    Result: Money,
     Time: 1,
     Category: God_Space_Item,
-    CanBeDoneFromFloor: true,
   }
 
 }

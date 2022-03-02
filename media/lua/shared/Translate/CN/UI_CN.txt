@@ -2,4 +2,10 @@ UI_CN = {
   UI_trait_lunhuizhe = "轮回者",
   UI_trait_lunhuizhe_desc = "一位主神空间的强大轮回者",
   UI_prof_lunhuizhe = "主神空间轮回者",
+  UI_trait_warrior_primary = "武道家(初级)",
+  UI_trait_warrior_middle = "武道家(中级)",
+  UI_trait_warrior_senior = "武道家(高级级)",
+  UI_trait_warrior_primary_desc = "一位刚踏上武道之路的新手",
+  UI_trait_warrior_middle_desc = "一位资深的武者",
+  UI_trait_warrior_senior_desc = "一位登峰造极的宗师",
 }

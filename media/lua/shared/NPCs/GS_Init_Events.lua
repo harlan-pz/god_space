@@ -6,9 +6,9 @@ local function initGSTraits()
         false)
     TraitFactory.addTrait("warrior_primary", getText("UI_trait_warrior_primary"), 6,
         getText("UI_trait_warrior_primary_desc"), false, false)
-    TraitFactory.addTrait("warrior_middle", getText("UI_trait_warrior_middle"), 6,
+    TraitFactory.addTrait("warrior_middle", getText("UI_trait_warrior_middle"), 12,
         getText("UI_trait_warrior_middle_desc"), false, false)
-    TraitFactory.addTrait("warrior_senior", getText("UI_trait_warrior_senior"), 6,
+    TraitFactory.addTrait("warrior_senior", getText("UI_trait_warrior_senior"), 24,
         getText("UI_trait_warrior_senior_desc"), false, false)
 end
 
@@ -20,6 +20,7 @@ local function initModData(_player)
     end
     if player:HasTrait("lunhuizhe") and modData.shieldValue == nil then
         modData.shieldValue = modData.maxShieldValue
+        modData.canShield = true
     end
     if player:HasTrait("warrior_primary") then
         modData.maxShieldValue = 50
@@ -77,6 +78,10 @@ local function defendAttack(_player)
         if player:getBodyDamage():getHealth() < 100 and modData.shieldValue > 0 then
             player:getBodyDamage():RestoreToFullHealth()
             modData.shieldValue = modData.shieldValue - ZombRand(5) > 0 and modData.shieldValue - ZombRand(5) or 0
+            if modData.shieldValue == 0 then
+                modData.canShield = false
+                player:Say(getText("IGUI_Shield_Broken"))
+            end
             player:Say(getText("IGUI_Shield_Value") .. modData.shieldValue)
         end
     end

@@ -61,6 +61,15 @@ module GodSpace {
     CanBeDoneFromFloor: true,
   }
 
+  recipe exchange milk {
+    keep God_Watch,
+    god_point = 50,
+    Result: Milk,
+    Time: 50,
+    Category: God_Space_Item,
+    CanBeDoneFromFloor: true,
+  }
+
   recipe exchange coffee {
     keep God_Watch,
     god_point = 50,
@@ -69,6 +78,7 @@ module GodSpace {
     Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }
+
 
   recipe exchange repair tool {
     keep God_Watch,

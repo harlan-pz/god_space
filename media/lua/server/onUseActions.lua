@@ -70,3 +70,10 @@ function Recipe.OnCreate.repairShield50(items, result, player)
     player:Say(getText("IGUI_Max_Shield_Value") .. player:getModData().maxShieldValue)
     player:Say(getText("IGUI_Shield_Value") .. player:getModData().shieldValue)
 end
+
+function Recipe.OnCreate.viewShieldValue(items, result, player)
+    if player:getTraits():contains("lunhuizhe") then
+        player:Say(getText("IGUI_Shield_Value") .. player:getModData().shieldValue)
+    end
+
+end

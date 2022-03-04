@@ -18,6 +18,7 @@ module GodSpace
   {
     keep God_Watch,
     space_ring,
+    side_quests_d,
     god_point = 200,
     Result: space_ring_super,
     Time: 50,
@@ -29,6 +30,7 @@ module GodSpace
   {
     keep God_Watch,
     space_ring_super,
+    side_quests_c,
     god_point = 500,
     Result: space_ring_finall,
     Time: 50,

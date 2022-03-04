@@ -45,4 +45,13 @@ module GodSpace {
     Category: God_Space_Repaire,
     OnCreate: Recipe.OnCreate.repairShield50,
   }
+
+  recipe view shield {
+    keep God_Watch,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 1,
+    Category: God_Space_Repaire,
+    OnCreate: Recipe.OnCreate.viewShieldValue,
+  }
 }

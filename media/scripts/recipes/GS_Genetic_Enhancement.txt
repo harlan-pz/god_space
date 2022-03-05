@@ -35,4 +35,37 @@ module GodSpace {
     Category: God_Space_Enhancement,
     OnCreate: Recipe.OnCreate.exchangeSeniorWarrior,
   }
+
+  recipe exchange primary gunfighting {
+    keep God_Watch,
+    god_point = 500,
+    side_quests_b,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Enhancement,
+    OnCreate: Recipe.OnCreate.exchangePrimaryGunFighting,
+  }
+
+  recipe exchange middle gunfighting {
+    keep God_Watch,
+    god_point = 1000,
+    side_quests_a,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Enhancement,
+    OnCreate: Recipe.OnCreate.exchangeMiddleGunFighting,
+  }
+
+  recipe exchange senior gunfighting {
+    keep God_Watch,
+    god_point = 2000,
+    side_quests_s,
+    Result: god_point,
+    RemoveResultItem : true,
+    Time: 100,
+    Category: God_Space_Enhancement,
+    OnCreate: Recipe.OnCreate.exchangeSeniorGunFighting,
+  }
 }

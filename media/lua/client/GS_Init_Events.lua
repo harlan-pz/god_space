@@ -1,15 +1,4 @@
-require "MainCreationMethods"
-
--- 初始化特性
-local function initGSTraits()
-    TraitFactory.addTrait("lunhuizhe", getText("UI_trait_lunhuizhe"), 999, getText("UI_trait_lunhuizhe_desc"), true)
-    TraitFactory.addTrait("warrior_primary", getText("UI_trait_warrior_primary"), 999,
-        getText("UI_trait_warrior_primary_desc"), true)
-    TraitFactory.addTrait("warrior_middle", getText("UI_trait_warrior_middle"), 999,
-        getText("UI_trait_warrior_middle_desc"), true)
-    TraitFactory.addTrait("warrior_senior", getText("UI_trait_warrior_senior"), 999,
-        getText("UI_trait_warrior_senior_desc"), true)
-end
+require('NPCs/MainCreationMethods');
 
 local function initModData(_player)
     local player = _player
@@ -59,18 +48,6 @@ local function getItem(zombie)
     end
 end
 
--- 添加职业
-GS_Professions = {};
-GS_Professions.DoProfessions = function()
-    local lunhuizhe_projession = ProfessionFactory.addProfession("lunhuizhe", getText("UI_prof_lunhuizhe"), "lunhuizhe",
-        12);
-    lunhuizhe_projession:addXPBoost(Perks.Strength, 3);
-    lunhuizhe_projession:addXPBoost(Perks.Fitness, 3);
-    lunhuizhe_projession:addXPBoost(Perks.Aiming, 4);
-    lunhuizhe_projession:addXPBoost(Perks.Reloading, 4);
-    lunhuizhe_projession:addFreeTrait("lunhuizhe");
-end
-
 -- 护盾实现
 local function defendAttack(_player)
     local player = _player
@@ -93,10 +70,44 @@ local function defendAttack(_player)
     end
 end
 
+-- 枪斗术实现
+
+local function hasGunfightingTrait(character, inventoryItem)
+    if inventoryItem ~= nil then
+        local scriptItem = inventoryItem:getScriptItem()
+        local ssv = scriptItem:getSoundVolume()
+        local ssr = scriptItem:getSoundRadius()
+        if inventoryItem:getStringItemType() == "RangedWeapon" then
+            if character:HasTrait("gunfighting_primary") then
+                inventoryItem:setSoundVolume(0.3 * ssv)
+                inventoryItem:setSoundRadius(0.3 * ssr)
+                return
+            end
+            if character:HasTrait("gunfighting_middle") then
+                inventoryItem:setSoundVolume(0.1 * ssv)
+                inventoryItem:setSoundRadius(0.1 * ssr)
+                return
+            end
+            if character:HasTrait("gunfighting_senior") then
+                inventoryItem:setSoundVolume(0.01 * ssv)
+                inventoryItem:setSoundRadius(0.01 * ssr)
+                return
+            end
+            inventoryItem:setSoundVolume(ssv)
+            inventoryItem:setSoundRadius(ssr)
+        end
+    end
+end
+
 Events.OnGameBoot.Add(initGSTraits)
 Events.OnGameBoot.Add(GS_Professions.DoProfessions);
 Events.OnNewGame.Add(initGSItems)
 Events.OnNewGame.Add(initModData)
+Events.OnEquipPrimary.Add(hasGunfightingTrait)
+Events.OnGameStart.Add(function()
+    local player = getPlayer()
+    hasGunfightingTrait(player, player:getPrimaryHandItem())
+end)
 Events.OnCreateLivingCharacter.Add(GS_Professions.DoProfessions);
 Events.OnCreateLivingCharacter.Add(initModData);
 Events.OnZombieDead.Add(getItem)

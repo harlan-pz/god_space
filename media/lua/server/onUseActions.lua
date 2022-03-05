@@ -77,3 +77,29 @@ function Recipe.OnCreate.viewShieldValue(items, result, player)
     end
 
 end
+
+function Recipe.OnCreate.exchangePrimaryGunFighting(items, result, player)
+    if not player:getTraits():contains("gunfighting_primary") and not player:getTraits():contains("gunfighting_middle") and
+        not player:getTraits():contains("gunfighting_senior") then
+        player:getTraits():add("gunfighting_primary")
+        player:Say(getText("IGUI_Exchange_Primary_Gunfighting"))
+    end
+end
+
+function Recipe.OnCreate.exchangeMiddleGunFighting(items, result, player)
+    if not player:getTraits():contains("gunfighting_middle") and not player:getTraits():contains("gunfighting_senior") and
+        player:getTraits():contains("gunfighting_primary") then
+        player:getTraits():add("gunfighting_middle")
+        player:getTraits():remove("gunfighting_primary")
+        player:Say(getText("IGUI_Exchange_Middle_Gunfighting"))
+    end
+
+end
+
+function Recipe.OnCreate.exchangeSeniorGunFighting(items, result, player)
+    if not player:getTraits():contains("gunfighting_senior") and player:getTraits():contains("gunfighting_middle") then
+        player:getTraits():add("gunfighting_senior")
+        player:getTraits():remove("gunfighting_middle")
+        player:Say(getText("IGUI_Exchange_Senior_Gunfighting"))
+    end
+end

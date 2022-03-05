@@ -1,12 +1,9 @@
-module GodSpace {
-  imports {
-    Base,
-  }
+module Base {
 
   recipe exchange primary warrior {
     keep God_Watch,
     god_point = 500,
-    side_quests_b,
+    side_quests_c,
     Result: god_point,
     RemoveResultItem : true,
     Time: 100,
@@ -17,7 +14,7 @@ module GodSpace {
   recipe exchange middle warrior {
     keep God_Watch,
     god_point = 1000,
-    side_quests_a,
+    side_quests_b,
     Result: god_point,
     RemoveResultItem : true,
     Time: 100,
@@ -28,7 +25,7 @@ module GodSpace {
   recipe exchange senior warrior {
     keep God_Watch,
     god_point = 2000,
-    side_quests_s,
+    side_quests_a,
     Result: god_point,
     RemoveResultItem : true,
     Time: 100,
@@ -39,7 +36,7 @@ module GodSpace {
   recipe exchange primary gunfighting {
     keep God_Watch,
     god_point = 500,
-    side_quests_b,
+    side_quests_c,
     Result: god_point,
     RemoveResultItem : true,
     Time: 100,
@@ -50,7 +47,7 @@ module GodSpace {
   recipe exchange middle gunfighting {
     keep God_Watch,
     god_point = 1000,
-    side_quests_a,
+    side_quests_b,
     Result: god_point,
     RemoveResultItem : true,
     Time: 100,
@@ -61,7 +58,7 @@ module GodSpace {
   recipe exchange senior gunfighting {
     keep God_Watch,
     god_point = 2000,
-    side_quests_s,
+    side_quests_a,
     Result: god_point,
     RemoveResultItem : true,
     Time: 100,

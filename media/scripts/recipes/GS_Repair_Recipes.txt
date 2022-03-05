@@ -1,8 +1,5 @@
-module GodSpace {
-  imports {
-    Base,
-  }
-
+module Base {
+  
   recipe exchange god repair light {
     keep God_Watch,
     god_point = 300,

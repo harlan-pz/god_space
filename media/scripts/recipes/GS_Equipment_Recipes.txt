@@ -1,8 +1,5 @@
-module GodSpace 
+module Base 
 {
-  imports {
-    Base,
-  }
 
   recipe exchange space ring
   {

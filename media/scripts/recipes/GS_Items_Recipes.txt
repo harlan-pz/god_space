@@ -1,8 +1,5 @@
-module GodSpace {
-  imports {
-    Base,
-  }
-
+module Base {
+  
    exchange Axe {
     keep God_Watch,
     side_quests_c,
@@ -137,6 +134,42 @@ module GodSpace {
     god_point,
     Result: Money,
     Time: 1,
+    Category: God_Space_Item,
+  }
+
+  recipe exchange AssaultRifle {
+    keep God_Watch,
+    god_point = 200,
+    side_quests_c,
+    Result: AssaultRifle,
+    Time: 100,
+    Category: God_Space_Item,
+  }
+
+  recipe exchange AssaultRifle2 {
+    keep God_Watch,
+    god_point = 200,
+    side_quests_c,
+    Result: AssaultRifle2,
+    Time: 100,
+    Category: God_Space_Item,
+  }
+
+  recipe exchange M14Clip {
+    keep God_Watch,
+    god_point = 200,
+    side_quests_d,
+    Result: M14Clip,
+    Time: 100,
+    Category: God_Space_Item,
+  }
+
+  recipe exchange 556Clip {
+    keep God_Watch,
+    god_point = 200,
+    side_quests_d,
+    Result: 556Clip,
+    Time: 100,
     Category: God_Space_Item,
   }
 

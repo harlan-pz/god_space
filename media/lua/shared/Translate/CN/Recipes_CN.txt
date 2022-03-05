@@ -53,4 +53,8 @@ Recipe_CN = {
   Recipe_exchange money = "兑换 1张钞票",
   Recipe_use repair tool = "使用 万能修理工具",
   Recipe_view shield = "查看护盾值",
+  Recipe_exchange 556Clip = "兑换 5.56mm弹匣",
+  Recipe_exchange M14Clip = "兑换 .308弹匣  ",
+  Recipe_exchange AssaultRifle = "兑换 M16突击步枪",
+  Recipe_exchange AssaultRifle2 = "兑换 M14突击步枪",
 }

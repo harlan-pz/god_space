@@ -25,9 +25,9 @@ end
 local function initGSItems(playerObj)
     local inv = playerObj:getInventory()
     if playerObj:HasTrait("lunhuizhe") then
-        inv:AddItem("GodSpace.God_Watch")
-        inv:AddItems("GodSpace.god_point", 100)
-        inv:AddItems("GodSpace.side_quests_d", 3)
+        inv:AddItem("God_Watch")
+        inv:AddItems("god_point", 100)
+        inv:AddItems("side_quests_d", 3)
     end
 end
 
@@ -35,15 +35,15 @@ end
 local function getItem(zombie)
     local player = getPlayer()
     if player:HasTrait("lunhuizhe") then
-        player:getInventory():AddItems("GodSpace.god_point", ZombRand(2, 10))
+        player:getInventory():AddItems("god_point", ZombRand(2, 10))
         if ZombRand(100) < 6 then
-            player:getInventory():AddItems("GodSpace.side_quests_d", 1)
+            player:getInventory():AddItems("side_quests_d", 1)
         end
         if ZombRand(100) < 1 then
-            player:getInventory():AddItems("GodSpace.side_quests_c", 1)
+            player:getInventory():AddItems("side_quests_c", 1)
         end
         if ZombRand(10000) < 6 then
-            player:getInventory():AddItems("GodSpace.side_quests_b", 1)
+            player:getInventory():AddItems("side_quests_b", 1)
         end
     end
 end

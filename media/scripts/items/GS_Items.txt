@@ -1,9 +1,5 @@
-module GodSpace
+module Base
 {
-	imports {
-		Base,
-	}
-	
   item God_Watch
 	{
 	  DisplayCategory = Accessory,
@@ -30,7 +26,7 @@ module GodSpace
     DisplayName = space_ring,
     ClothingItem = Ring_Right_RingFinger_GoldRuby,
     ClothingItemExtra = space_ring,
-    ClothingItemExtraOption = FannyPack_WearFront,,
+    ClothingItemExtraOption = FannyPack_WearFront,
     CanBeEquipped = Ring001,
     BodyLocation = Ring001,
     Icon = Ring_GoldRuby,
@@ -47,7 +43,7 @@ module GodSpace
     DisplayName = space_ring_super,
     ClothingItem = Ring_Right_RingFinger_GoldRuby,
     ClothingItemExtra = space_ring_super,
-    ClothingItemExtraOption = FannyPack_WearFront,,
+    ClothingItemExtraOption = FannyPack_WearFront,
     CanBeEquipped = Ring001,
     BodyLocation = Ring001,
     Icon = Ring_GoldRuby,
@@ -64,7 +60,7 @@ module GodSpace
     DisplayName = space_ring_finall,
     ClothingItem = Ring_Right_RingFinger_GoldRuby,
     ClothingItemExtra = space_ring_finall,
-    ClothingItemExtraOption = FannyPack_WearFront,,
+    ClothingItemExtraOption = FannyPack_WearFront,
     CanBeEquipped = Ring001,
     BodyLocation = Ring001,
     Icon = Ring_GoldRuby,

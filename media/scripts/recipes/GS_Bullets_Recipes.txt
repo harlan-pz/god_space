@@ -1,8 +1,5 @@
-module GodSpace {
-  imports {
-    Base,
-  }
-
+module Base {
+  
  recipe exchange 223Box {
     keep God_Watch,
     god_point = 20,

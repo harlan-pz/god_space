@@ -1,5 +1,5 @@
 module Base {
-  
+
    exchange Axe {
     keep God_Watch,
     side_quests_c,
@@ -123,7 +123,7 @@ module Base {
 
   recipe exchange side quests exchange {
     keep God_Watch,
-    god_point = 1000,
+    god_point = 500,
     Result: side_quests_exchange,
     Time: 50,
     Category: God_Space_Item,

@@ -2,14 +2,13 @@ require "MainCreationMethods"
 
 -- 初始化特性
 local function initGSTraits()
-    TraitFactory.addTrait("lunhuizhe", getText("UI_trait_lunhuizhe"), 6, getText("UI_trait_lunhuizhe_desc"), false,
-        false)
-    TraitFactory.addTrait("warrior_primary", getText("UI_trait_warrior_primary"), 6,
-        getText("UI_trait_warrior_primary_desc"), false, false)
-    TraitFactory.addTrait("warrior_middle", getText("UI_trait_warrior_middle"), 12,
-        getText("UI_trait_warrior_middle_desc"), false, false)
-    TraitFactory.addTrait("warrior_senior", getText("UI_trait_warrior_senior"), 24,
-        getText("UI_trait_warrior_senior_desc"), false, false)
+    TraitFactory.addTrait("lunhuizhe", getText("UI_trait_lunhuizhe"), 999, getText("UI_trait_lunhuizhe_desc"), true)
+    TraitFactory.addTrait("warrior_primary", getText("UI_trait_warrior_primary"), 999,
+        getText("UI_trait_warrior_primary_desc"), true)
+    TraitFactory.addTrait("warrior_middle", getText("UI_trait_warrior_middle"), 999,
+        getText("UI_trait_warrior_middle_desc"), true)
+    TraitFactory.addTrait("warrior_senior", getText("UI_trait_warrior_senior"), 999,
+        getText("UI_trait_warrior_senior_desc"), true)
 end
 
 local function initModData(_player)
@@ -47,11 +46,11 @@ end
 local function getItem(zombie)
     local player = getPlayer()
     if player:HasTrait("lunhuizhe") then
-        player:getInventory():AddItems("GodSpace.god_point", ZombRand(5))
+        player:getInventory():AddItems("GodSpace.god_point", ZombRand(2, 10))
         if ZombRand(100) < 6 then
             player:getInventory():AddItems("GodSpace.side_quests_d", 1)
         end
-        if ZombRand(1000) < 6 then
+        if ZombRand(100) < 1 then
             player:getInventory():AddItems("GodSpace.side_quests_c", 1)
         end
         if ZombRand(10000) < 6 then
@@ -67,6 +66,8 @@ GS_Professions.DoProfessions = function()
         12);
     lunhuizhe_projession:addXPBoost(Perks.Strength, 3);
     lunhuizhe_projession:addXPBoost(Perks.Fitness, 3);
+    lunhuizhe_projession:addXPBoost(Perks.Aiming, 4);
+    lunhuizhe_projession:addXPBoost(Perks.Reloading, 4);
     lunhuizhe_projession:addFreeTrait("lunhuizhe");
 end
 
@@ -74,9 +75,14 @@ end
 local function defendAttack(_player)
     local player = _player
     local modData = player:getModData()
+    local bodydamage = player:getBodyDamage();
     if player:HasTrait("lunhuizhe") then
-        if player:getBodyDamage():getHealth() < 100 and modData.shieldValue > 0 then
-            player:getBodyDamage():RestoreToFullHealth()
+        if bodydamage:getHealth() < 100 and modData.shieldValue > 0 then
+            for n = 0, bodydamage:getBodyParts():size() - 1 do
+                local bodyPart = bodydamage:getBodyParts():get(n);
+                bodyPart:RestoreToFullHealth();
+            end
+            -- player:getBodyDamage():RestoreToFullHealth()
             modData.shieldValue = modData.shieldValue - ZombRand(5) > 0 and modData.shieldValue - ZombRand(5) or 0
             if modData.shieldValue == 0 then
                 modData.canShield = false

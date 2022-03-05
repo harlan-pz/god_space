@@ -173,4 +173,11 @@ module Base {
     Category: God_Space_Item,
   }
 
+  recipe exchange god watch {
+    god_point = 10,
+    side_quests_d,
+    Result: God_Watch,
+    Time: 100,
+    Category: God_Space_Item,
+  }
 }

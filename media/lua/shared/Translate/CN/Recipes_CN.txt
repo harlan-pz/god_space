@@ -23,6 +23,7 @@ Recipe_CN = {
   Recipe_exchange space ring food = "兑换 空间戒指(食物)",
   Recipe_exchange space ring arm = "兑换 空间戒指(武器)",
   Recipe_exchange Crowbar = "兑换 撬棍",
+  Recipe_exchange Machete = "兑换 大砍刀",
   Recipe_exchange Sledgehammer2 = "兑换 工程大锤",
   Recipe_exchange 223Box = "兑换 .223子弹(盒装)",
   Recipe_exchange 308Box = "兑换 .308子弹(盒装)",

@@ -19,6 +19,16 @@ module Base {
     Category: God_Space_Item,
     CanBeDoneFromFloor: true,
   }  
+
+  recipe exchange Machete {
+    keep God_Watch,
+    side_quests_c,
+    god_point = 200,
+    Result: Machete,
+    Time: 50,
+    Category: God_Space_Item,
+    CanBeDoneFromFloor: true,
+  }  
   
   recipe exchange Katana {
     keep God_Watch,
@@ -123,7 +133,7 @@ module Base {
 
   recipe exchange side quests exchange {
     keep God_Watch,
-    god_point = 500,
+    god_point = 200,
     Result: side_quests_exchange,
     Time: 50,
     Category: God_Space_Item,
